@@ -20,8 +20,15 @@ var app = new Vue(
                 'https://source.unsplash.com/random'
             ],
 
-            
+            contatore: 0
         },
-
-    },
-);
+        
+        methods: {
+            imgSlide: function(){
+                this.contatore += 1;
+                if (this.contatore > (this.immagggini.length - 1))
+                this.contatore = 0;
+            }
+        },
+    }
+)
