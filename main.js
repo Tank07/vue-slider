@@ -26,9 +26,12 @@ var app = new Vue(
         methods: {
             imgSlide: function(){
                 this.contatore += 1;
-                if (this.contatore > (this.immagggini.length - 1))
-                this.contatore = 0;
-            }
+
+                if (this.contatore > (this.immagggini.length - 1)){
+                    this.contatore = 0;
+                }
+                
+            },
         },
     }
 )
